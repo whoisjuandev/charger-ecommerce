@@ -1,5 +1,3 @@
-<img src="/home/juancho/Desktop/ecommerce/charger logo nombre completo.png" alt="logo charger" style="zoom:25%;" />
-
 
 # CHARGER
 
