@@ -1,0 +1,81 @@
+<!--Api Documentation-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documentacion de la api</title>
+</head>
+<body>
+
+    <h1>E-COMMERCE CHARGER</h1>
+    <h2>Documentacion de la api</h2>
+    <p> Esta va a ser la documentacion acerca de nuestra api para la tienda online de CHARGER.
+        Para ello vamos a hacer un pequeño desarrollo acerca de nuestra base de datos y como deberia ser el flujo de data con el cliente;<br>
+        luego se ampliara con las rutas, las cuales seran provistas en detalle con instrucciones de como utilizarlas.
+    </p>
+    <h3>La base de datos</h3>
+    <p>La base de Datos esta hecha con el Gestor de base de datos relacionales POSTGRES y modelada mediante el ORM SEQUELIZE.<br>
+        A continuacion se enlistaran las entidas parte de esta : <br>{Esta lista no contiene tablas intermedias <br> solo contiene las que son de interes para el desarrollador front-end y resalta aquellas principales}
+        <li>
+            <ul> <a href="">Usuario</a> </ul>
+            <ul>InfoUsuario</ul>
+            <ul>Roles</ul>
+            <ul>Ordenes</ul>
+            <ul>Carrito</ul>
+            <ul>Productos</ul>
+            <ul>Descripcion</ul>
+            <ul>Categorias</ul>
+            <ul>Reviews</ul>
+            
+
+        </li> 
+    </p>
+    <h2>Diagrama entidad relacion</h2>
+    <span>
+        <img src="./image.png" alt='db'/>
+    </span>
+    <p>
+        Para comenzar este proceso tenemos que explicar que hace cada entidad y a quien requiere: 
+   </p>
+   <h3>Usuario</h3>
+   <p>
+   El usuario es una persona que interactua con el e-commerce. Por ahora hay tres jerarquias de usuarios utilizando el mismo modelo[admnis,usuarios e invitados] esta jerarquia responde a la entidad <a href="">Roles</a><div class="">    
+   </p>
+   <h3>InfoUsuario</h3>
+   <p>
+    El usuario cuenta con una serie datos adicionales que son proporcionados una vez este se registra. Mientras no se registre el usuario no se almacenaran datos personales de ningún tipo.
+   </p>
+   <h3>Roles</h3>
+   <p>
+       Corresponde a la unica propiedad de la entidad usuario, en un principio el usuario es seteado como invitado. Luego se define si este sera admin o cliente registrado, debiendo así proporcionar sus datos.
+   </p>
+   <h3>Ordenes</h3>
+   <p>
+       Las ordenes son todas las intenciones de compra que un usuario tiene, se almacenan salvo que el usuario la elimine dentro de el layout de carrito por lo que es necesario generar un CRUD  de este elemento. <br>
+       Un usuario registrado podrá acceder a todas sus ordenes pasadas completadas. y al igual que el invitado podrá ver su orden pendiente. No pueden haber mas de una orden como pendiente por usuario.
+   </p>
+   <h3>Carrito</h3>
+   <p>
+       Su funcion es obvia y analoga a la de un carrito en la vida real, si los carritos tuvieran los datos de una compra perfectamente accesibles al comprador.
+   </p>
+   <h3>Productos</h3>
+   <p>
+       Los productos se definen por su id y nombre, la id lo enlaza con otras tablas mientras el nombre es el codigo con el cual el usuario accede a ellos. Otra forma en que se acceden a ellos es a traves de sus categorias. 
+   </p>
+   <h3>Descripcion</h3>
+   <p>
+       Un producto tiene una descripcion, esto es un texto que quien genera la entidad del catalogo le asigna para que el comprador pueda familiarizarse con el producto.
+   </p>
+   <h3>Categorias</h3>
+   <p>
+       La categoria ofrece una breve descripcion de las caracteristicas del producto, a veces la caracteristica puede ser autodescriptiva como por ejemplo si dijieramos que zappatilla es una categoria o una mejor practica seria decir que categoria tipo de prenda se describe con zapatilla para una zapatilla. 
+       Los productos pueden tener muchas categorías y una categoria puede ser parte de muchos productos, es por esto que para definir categoria lo hacemos en prural y con el uso de una tabla intermedia
+   </p>
+    <h3>Reviews</h3>
+    <p>
+        Una review es un puntaje y un comentario que un comprador emite sobre un producto que ha comprado de esta forma alerta a otros compradores de su nivel de satisfaccion con el producto. El producto asociado a sus reviews obtiene todos los comentarios y un promedio del puntaje que recibe
+    </p>    
+</body>
+</html>
