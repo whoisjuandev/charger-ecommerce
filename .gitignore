@@ -120,3 +120,6 @@ a
 client/package-lock.json
 api/package-lock.json
 api/package-lock.json
+client/yarn.lock
+api/yarn.lock
+.vscode/settings.json

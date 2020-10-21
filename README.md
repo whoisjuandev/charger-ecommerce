@@ -3,20 +3,6 @@
 ![Charger](ReadmeAssets/homepage.png)
 Proyecto realizado en la cursada de la bootcamp Soy Henry, realizada en un equipo de 5 personas utilizando la metodologia Scrum.
 
-## Tecnologias usadas
-
-### Frontend
-- React hooks
-- Redux
-- Material UI
-- Axios
-
-### Backend
-- Nodejs
-- Express
-- Sequelize (PostgreSQL)
-- Mailgun
-- Passport
 
 ## ¿Como correr el proyecto?
 1. Crea una cuenta en [Mailgun](https://www.mailgun.com)
@@ -110,6 +96,25 @@ Siendo administradores tenemos acceso a muchas funcionalidades de la página, ta
   14. Para setear las categorías tenemos que darle al botón SET CATEGORIES</br>
   15. Ponemos el ID de nuestro producto y el ID de la categoría que queremos usar.</br>
   16. Damos a SEND, y listo, ahora nuestro producto tiene Categorías seteadas!
+  17. Ahora solo repetimos el proceso creando varios productos y categorías, asi vamos llenando nuestro Catálogo! Puede quedar algo así :point_down:
+
+![catalogo](ReadmeAssets/catalogo.png)
+
+## Tecnologias usadas
+
+### Frontend
+- React hooks
+- Redux
+- Material UI
+- Axios
+
+### Backend
+- Nodejs
+- Express
+- Sequelize (PostgreSQL)
+- Mailgun
+- Passport
+
 ## Nosotros
 
 Somos un grupo de 5 estudiantes de [Soy Henry](https://www.soyhenry.com/). Estas son nuestras cuentas de GitHub:

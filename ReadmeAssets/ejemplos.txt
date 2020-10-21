@@ -9,6 +9,7 @@ https://images.unsplash.com/photo-1542838686-37da4a9fd1b3?ixlib=rb-1.2.1&auto=fo
 
 campera cuero: 
 https://images.unsplash.com/photo-1551794840-8ae3b9c181f8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80
+description: A classic. That you'll never forget. The Tyson Biker Jacket. It's crafted from leather. With metal hardware to complement.
 
 campera negra: 
 https://images.unsplash.com/photo-1557977275-d261356f567f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=344&q=80
