@@ -1,6 +1,6 @@
 
 # CHARGER
-
+![Charger](ReadmeAssets/homepage.png)
 Proyecto realizado en la cursada de la bootcamp Soy Henry, realizada en un equipo de 5 personas utilizando la metodologia Scrum.
 
 ## Tecnologias usadas
@@ -78,9 +78,38 @@ Siendo administradores tenemos acceso a muchas funcionalidades de la página, ta
   3. Vamos a la sección CREATE PRODUCTS
   4. Llenamos el formulario con los datos que nos pide:
   ```
-  
+  Name: Nombre de nuestro producto, ej: Leather Jacket
+  Description: Un par de oraciones referido al producto
+  Price: Precio del producto, ej: 399. (no acepta numeros de punto flotante, ej  9.99) 
+  Stock: Cantidad de productos disponibles, ej: 12
+  Images: Link de una imagen, por ejemplo: "https://images.unsplash.com/photo-1542838686-37da4a9fd1b3?ixlib=rb-1.2.1&auto=format&fit=crop&w=334&q=80"
   ```
+  ![CreateProducts](ReadmeAssets/cargarproductos.png)
+  5. Solo queda darle al botón CREATE! Y listo, nuestro producto se ha creado.
+   
+  - En la carpeta ReadmeAssets te dejamos un archivo `.txt` con imagenes y descripciones de productos, para que puedas agregar varios productos.
 
+  6. Ahora vamos a cargar dos categorías y asignarselas a nuestro producto
+  7. Necesitamos ir a la sección ADD CATEGORIES
+  8. Llenamos los dos campos con la siguiente información:
+   ```
+   Name: TYPE 
+   Description: Jacket
+   ```
+  9.  Le damos a CREATE
+  10. Creamos otra categoría
+  ```
+   Name: SEASON
+   Description: Winter
+  ```
+  ![categoryType](ReadmeAssets/creartype.png)
+  ![categorySeason](ReadmeAssets/crearseason.png)
+  11. Ahora nos toca hacer que esas dos categorías que creamos, sean parte del producto. </br>
+  12. Vamos a la seccion PRODUCTS AND CATEGORIES</br>
+  13. Vamos a ver que nuestros productos y categorías creadas</br>
+  14. Para setear las categorías tenemos que darle al botón SET CATEGORIES</br>
+  15. Ponemos el ID de nuestro producto y el ID de la categoría que queremos usar.</br>
+  16. Damos a SEND, y listo, ahora nuestro producto tiene Categorías seteadas!
 ## Nosotros
 
 Somos un grupo de 5 estudiantes de [Soy Henry](https://www.soyhenry.com/). Estas son nuestras cuentas de GitHub:
