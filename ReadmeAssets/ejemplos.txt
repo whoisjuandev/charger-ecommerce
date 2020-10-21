@@ -1,0 +1,36 @@
+remera blanca: 
+https://images.unsplash.com/photo-1516790987203-731c5d30f489?ixlib=rb-1.2.1&auto=format&fit=crop&w=1534&q=80
+
+remera blanca chica: 
+https://images.unsplash.com/photo-1566101797645-91bfeaac56e3?ixlib=rb-1.2.1&auto=format&fit=crop&w=375&q=80
+
+campera blanca: 
+https://images.unsplash.com/photo-1542838686-37da4a9fd1b3?ixlib=rb-1.2.1&auto=format&fit=crop&w=334&q=80
+
+campera cuero: 
+https://images.unsplash.com/photo-1551794840-8ae3b9c181f8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80
+
+campera negra: 
+https://images.unsplash.com/photo-1557977275-d261356f567f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=344&q=80
+
+jeans: 
+https://images.unsplash.com/photo-1541099649105-f69ad21f3246?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80
+
+
+
+server.delete('/:ReviewId', (req, res)=>{
+    const {id} = req.params.ReviewId
+    if(id === undefined) {
+		return res.status(400).send({ text: 'Invalid id' });
+    }
+    Reviews.destroy({
+		where: {
+			id: parseInt(id)
+		}
+	}).then(() => {
+		res.send({ text: 'Review deleted'});
+	}).catch(() => {
+		res.status(500).send({ text: 'Internal error'});
+	})
+
+})

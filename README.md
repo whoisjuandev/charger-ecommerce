@@ -61,7 +61,7 @@ Al entrar a la página, verás que no hay ningun producto cargado. Para poder te
 }
 ```
 5. Solo queda darle Send para que nuestro usuario ahora tenga permisos de administrador y refrescar la página.
-6. Debería quedar algo así :backhand_index_pointing_down_light_skin_tone:
+6. Debería quedar algo así :point_down:
   
 ![UserToAdmin](ReadmeAssets/usertoadminpostman.png)
 
