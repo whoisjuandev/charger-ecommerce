@@ -22,7 +22,7 @@ Se muestra un resumen de todos los productos agregados. A la vez se agregan un p
 
 ![Cart](ReadmeAssets/carrito.png)
 
-## PAYMENT :credit-card:
+## PAYMENT :credit_card:
 En la sección del pago se muestra un resumen con los mejores datos indispensables. Para realizar el pago, implementamos [Stripe](https://stripe.com/), una librería de métodos de pago.
 
 - Si deseas probar esta función, podes usar la siguiente información: 
