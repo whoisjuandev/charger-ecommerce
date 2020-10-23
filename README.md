@@ -1,8 +1,40 @@
 
 # CHARGER
-![Charger](ReadmeAssets/homepage.png)
-Proyecto realizado en la cursada de la bootcamp Soy Henry, realizada en un equipo de 5 personas utilizando la metodologia Scrum.
+Charger es un e-commerce dedicado a la venta de indumentaria. Fue desarrollado en la última etapa del Bootcamp [Soy Henry](https://soyhenry.com/) :rocket:
 
+## HOMEPAGE :house:
+![Charger](ReadmeAssets/homepage.png)
+
+## LOGIN & REGISTER :memo:
+![Login](ReadmeAssets/login.png)
+
+![Register](ReadmeAssets/register.png)
+
+## PRODUCT PAGE :shirt: :jeans:
+![ProductPage](ReadmeAssets/productpage.png)
+
+## CART :heavy_check_mark:
+Se muestra un resumen de todos los productos agregados. A la vez se agregan un par de acciones para realizar, tales como:
+
+- Agregar o eliminar productos del carrito
+- Limpiar el carrito
+- Generar la orden que lleva al pago.
+
+![Cart](ReadmeAssets/carrito.png)
+
+## PAYMENT :credit-card:
+En la sección del pago se muestra un resumen con los mejores datos indispensables. Para realizar el pago, implementamos [Stripe](https://stripe.com/), una librería de métodos de pago.
+
+- Si deseas probar esta función, podes usar la siguiente información: 
+  - Número: 4242 4242 4242 4242
+  - Fecha: 04/24
+  - CVV: 242
+  - Ultimos digitos: 42424
+
+![Payment](ReadmeAssets/payment.png)
+
+## FEATURES :rocket:
+Existen muchas más features implementadas, solo es cuestión de averiguar cuales son. Te invito a que puedas probar el proyecto :point_down:
 
 ## ¿Como correr el proyecto?
 1. Crea una cuenta en [Mailgun](https://www.mailgun.com)
@@ -47,6 +79,7 @@ Al entrar a la página, verás que no hay ningun producto cargado. Para poder te
 }
 ```
 5. Solo queda darle Send para que nuestro usuario ahora tenga permisos de administrador y refrescar la página.
+   
 6. Debería quedar algo así :point_down:
   
 ![UserToAdmin](ReadmeAssets/usertoadminpostman.png)
@@ -65,24 +98,32 @@ Siendo administradores tenemos acceso a muchas funcionalidades de la página, ta
   4. Llenamos el formulario con los datos que nos pide:
   ```
   Name: Nombre de nuestro producto, ej: Leather Jacket
+
   Description: Un par de oraciones referido al producto
+
   Price: Precio del producto, ej: 399. (no acepta numeros de punto flotante, ej  9.99) 
+
   Stock: Cantidad de productos disponibles, ej: 12
+
   Images: Link de una imagen, por ejemplo: "https://images.unsplash.com/photo-1542838686-37da4a9fd1b3?ixlib=rb-1.2.1&auto=format&fit=crop&w=334&q=80"
   ```
   ![CreateProducts](ReadmeAssets/cargarproductos.png)
+
   5. Solo queda darle al botón CREATE! Y listo, nuestro producto se ha creado.
    
   - En la carpeta ReadmeAssets te dejamos un archivo `.txt` con imagenes y descripciones de productos, para que puedas agregar varios productos.
 
   6. Ahora vamos a cargar dos categorías y asignarselas a nuestro producto
+   
   7. Necesitamos ir a la sección ADD CATEGORIES
+   
   8. Llenamos los dos campos con la siguiente información:
    ```
    Name: TYPE 
    Description: Jacket
    ```
   9.  Le damos a CREATE
+   
   10. Creamos otra categoría
   ```
    Name: SEASON
@@ -91,11 +132,17 @@ Siendo administradores tenemos acceso a muchas funcionalidades de la página, ta
   ![categoryType](ReadmeAssets/creartype.png)
   ![categorySeason](ReadmeAssets/crearseason.png)
   11. Ahora nos toca hacer que esas dos categorías que creamos, sean parte del producto. </br>
+   
   12. Vamos a la seccion PRODUCTS AND CATEGORIES</br>
+
   13. Vamos a ver que nuestros productos y categorías creadas</br>
+
   14. Para setear las categorías tenemos que darle al botón SET CATEGORIES</br>
+   
   15. Ponemos el ID de nuestro producto y el ID de la categoría que queremos usar.</br>
+
   16. Damos a SEND, y listo, ahora nuestro producto tiene Categorías seteadas!
+
   17. Ahora solo repetimos el proceso creando varios productos y categorías, asi vamos llenando nuestro Catálogo! Puede quedar algo así :point_down:
 
 ![catalogo](ReadmeAssets/catalogo.png)
